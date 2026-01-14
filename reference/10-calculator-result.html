@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMA.IA - Calculator Result</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; }
+        .screen-container { width: 375px; height: 812px; background: white; overflow-y: auto; }
+        .header { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header h1 { font-size: 24px; font-weight: 600; }
+        .back-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; padding: 5px; }
+        .lang-toggle { background: rgba(255,255,255,0.2); border: none; color: white; padding: 8px 15px; border-radius: 20px; font-weight: 600; }
+        .content { padding: 20px; }
+        .disease-result { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; border-radius: 15px; padding: 25px; text-align: center; margin-bottom: 20px; }
+        .disease-name { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
+        .section-header { font-size: 18px; font-weight: 700; color: #2c3e50; margin: 25px 0 15px 0; }
+        .list-item { display: flex; align-items: center; padding: 15px; background: white; border-radius: 12px; margin-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .list-icon { font-size: 24px; margin-right: 15px; }
+        .list-title { font-weight: 600; color: #2c3e50; margin-bottom: 3px; }
+        .list-subtitle { font-size: 13px; color: #7f8c8d; }
+        .list-value { font-weight: 700; color: #2ecc71; }
+        .card { background: white; border-radius: 15px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .alert { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .btn-primary { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; border: none; padding: 18px 30px; border-radius: 15px; font-size: 18px; font-weight: 600; cursor: pointer; width: 100%; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3); }
+    </style>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="header">
+            <button class="back-btn">←</button>
+            <h1>Recommendation</h1>
+            <button class="lang-toggle">🌐 EN</button>
+        </div>
+        <div class="content">
+            <div class="disease-result">
+                <div style="font-size: 50px; margin-bottom: 10px;">🧮</div>
+                <div class="disease-name">For 1 Hectare Banana Farm</div>
+                <div style="margin-top: 10px; font-size: 14px; opacity: 0.9;">Vegetative Growth Stage</div>
+            </div>
+
+            <div class="section-header">Recommended Fertilizer</div>
+
+            <div class="list-item">
+                <div class="list-icon">📦</div>
+                <div style="flex: 1;">
+                    <div class="list-title">Complete Fertilizer (14-14-14)</div>
+                    <div class="list-subtitle">Application: Every 3 months</div>
+                </div>
+                <div class="list-value">2.5 sacks</div>
+            </div>
+
+            <div class="list-item">
+                <div class="list-icon">📦</div>
+                <div style="flex: 1;">
+                    <div class="list-title">Urea (46-0-0)</div>
+                    <div class="list-subtitle">Application: Every 2 months</div>
+                </div>
+                <div class="list-value">2 sacks</div>
+            </div>
+
+            <div class="list-item">
+                <div class="list-icon">📦</div>
+                <div style="flex: 1;">
+                    <div class="list-title">Potash (0-0-60)</div>
+                    <div class="list-subtitle">Application: Every 4 months</div>
+                </div>
+                <div class="list-value">1 sack</div>
+            </div>
+
+            <div class="section-header">Cost Estimate</div>
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Complete (2.5 sacks × ₱900)</span>
+                    <strong>₱2,250</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Urea (2 sacks × ₱850)</span>
+                    <strong>₱1,700</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 2px solid #e0e0e0;">
+                    <span>Potash (1 sack × ₱950)</span>
+                    <strong>₱950</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 18px;">
+                    <strong>Total Cost:</strong>
+                    <strong style="color: #2ecc71;">₱4,900</strong>
+                </div>
+            </div>
+
+            <div class="alert">
+                <strong>💰 You could save ₱1,200 compared to typical usage!</strong>
+                <p style="font-size: 13px; margin-top: 8px;">Based on data from similar farms in Camiguin</p>
+            </div>
+
+            <button class="btn-primary">Save Recommendation</button>
+        </div>
+    </div>
+</body>
+</html>

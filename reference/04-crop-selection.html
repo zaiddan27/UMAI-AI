@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMA.IA - Select Crop</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; }
+        .screen-container { width: 375px; height: 812px; background: white; overflow-y: auto; }
+        .header { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header h1 { font-size: 24px; font-weight: 600; }
+        .back-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; padding: 5px; }
+        .lang-toggle { background: rgba(255,255,255,0.2); border: none; color: white; padding: 8px 15px; border-radius: 20px; font-weight: 600; }
+        .content { padding: 20px; padding-bottom: 100px; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .feature-card { background: white; border-radius: 15px; padding: 20px; text-align: center; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .feature-icon { font-size: 35px; margin-bottom: 10px; }
+        .feature-title { font-size: 14px; font-weight: 600; color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="header">
+            <button class="back-btn">←</button>
+            <h1>Select Crop</h1>
+            <button class="lang-toggle">🌐 EN</button>
+        </div>
+        <div class="content">
+            <p style="color: #7f8c8d; margin-bottom: 20px;">
+                Choose the crop you want to diagnose:
+            </p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🥥</div>
+                    <div class="feature-title">Coconut<br>(Lubi)</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍌</div>
+                    <div class="feature-title">Banana<br>(Saging)</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍇</div>
+                    <div class="feature-title">Lanzones</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌾</div>
+                    <div class="feature-title">Abaca</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌾</div>
+                    <div class="feature-title">Rice<br>(Humay)</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍫</div>
+                    <div class="feature-title">Cacao</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🥬</div>
+                    <div class="feature-title">Vegetables<br>(Utanon)</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <div class="feature-title">Other</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

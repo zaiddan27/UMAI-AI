@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMA.IA - Home</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; }
+        .screen-container { width: 375px; height: 812px; background: white; overflow-y: auto; }
+        .header { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header h1 { font-size: 24px; font-weight: 600; }
+        .logo { font-size: 28px; font-weight: 700; }
+        .lang-toggle { background: rgba(255,255,255,0.2); border: none; color: white; padding: 8px 15px; border-radius: 20px; font-weight: 600; }
+        .content { padding: 20px; padding-bottom: 100px; }
+        .alert { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; border-radius: 8px; margin-bottom: 15px; font-size: 14px; }
+        .camera-btn { width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); border: none; margin: 30px auto; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 10px 30px rgba(46, 204, 113, 0.4); }
+        .camera-icon { font-size: 60px; color: white; }
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .stat-card { background: white; border-radius: 15px; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .stat-value { font-size: 28px; font-weight: 700; color: #2ecc71; margin-bottom: 5px; }
+        .stat-label { font-size: 14px; color: #7f8c8d; }
+        .section-header { font-size: 18px; font-weight: 700; color: #2c3e50; margin: 25px 0 15px 0; }
+        .card { background: white; border-radius: 15px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .card-icon { font-size: 40px; }
+        .card-title { font-size: 18px; font-weight: 600; margin-bottom: 5px; color: #2c3e50; }
+        .card-subtitle { font-size: 14px; color: #7f8c8d; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .feature-card { background: white; border-radius: 15px; padding: 20px; text-align: center; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .feature-icon { font-size: 35px; margin-bottom: 10px; }
+        .feature-title { font-size: 14px; font-weight: 600; color: #2c3e50; }
+        .bottom-nav { position: fixed; bottom: 0; left: 0; width: 375px; background: white; border-top: 1px solid #e0e0e0; display: flex; justify-content: space-around; padding: 10px 0; box-shadow: 0 -2px 10px rgba(0,0,0,0.05); }
+        .nav-item { display: flex; flex-direction: column; align-items: center; cursor: pointer; padding: 5px 15px; color: #95a5a6; }
+        .nav-item.active { color: #2ecc71; }
+        .nav-icon { font-size: 24px; margin-bottom: 5px; }
+        .nav-label { font-size: 11px; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="header">
+            <div class="logo">🌱</div>
+            <h1>Home</h1>
+            <button class="lang-toggle">🌐 EN</button>
+        </div>
+        <div class="content">
+            
+            <div class="alert">
+                ⚠️ Weather Alert: Possible typhoon in 3 days. Secure your crops!
+            </div>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <button class="camera-btn">
+                    <div class="camera-icon">📷</div>
+                </button>
+                <h2 style="color: #2c3e50; margin-top: 15px;">Scan Your Crop</h2>
+                <p style="color: #7f8c8d; font-size: 14px;">Take a photo to diagnose diseases</p>
+            </div>
+
+            <div class="section-header">Quick Stats</div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Scans This Month</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">₱2,340</div>
+                    <div class="stat-label">Money Saved</div>
+                </div>
+            </div>
+
+            <div class="section-header">Recent Scans</div>
+            <div class="card">
+                <div style="display: flex; align-items: center;">
+                    <div class="card-icon">🍌</div>
+                    <div style="flex: 1; margin-left: 15px;">
+                        <div class="card-title">Banana - Fusarium Wilt</div>
+                        <div class="card-subtitle">2 days ago • Treated</div>
+                    </div>
+                    <div style="color: #2ecc71; font-size: 20px;">✓</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; align-items: center;">
+                    <div class="card-icon">🥥</div>
+                    <div style="flex: 1; margin-left: 15px;">
+                        <div class="card-title">Coconut - Leaf Spot</div>
+                        <div class="card-subtitle">5 days ago • In Progress</div>
+                    </div>
+                    <div style="color: #f39c12; font-size: 20px;">⏱</div>
+                </div>
+            </div>
+
+            <div class="section-header">Farm Tools</div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧮</div>
+                    <div class="feature-title">Fertilizer Calculator</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <div class="feature-title">Expense Tracker</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-title">Harvest Records</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎥</div>
+                    <div class="feature-title">Video Guides</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌤️</div>
+                    <div class="feature-title">Weather</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <div class="feature-title">Market Prices</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="nav-item active">
+                <div class="nav-icon">🏠</div>
+                <div class="nav-label">Home</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">📷</div>
+                <div class="nav-label">Scan</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">📝</div>
+                <div class="nav-label">Records</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">👤</div>
+                <div class="nav-label">Profile</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

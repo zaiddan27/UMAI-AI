@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMA.IA - Diagnosis Result</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; }
+        .screen-container { width: 375px; height: 812px; background: white; overflow-y: auto; }
+        .header { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header h1 { font-size: 24px; font-weight: 600; }
+        .back-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; padding: 5px; }
+        .lang-toggle { background: rgba(255,255,255,0.2); border: none; color: white; padding: 8px 15px; border-radius: 20px; font-weight: 600; }
+        .content { padding: 20px; }
+        .disease-result { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border-radius: 15px; padding: 25px; text-align: center; margin-bottom: 20px; }
+        .disease-name { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
+        .confidence-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; }
+        .section-header { font-size: 18px; font-weight: 700; color: #2c3e50; margin: 25px 0 15px 0; }
+        .treatment-tabs { display: flex; gap: 10px; margin: 20px 0; overflow-x: auto; }
+        .treatment-tab { padding: 12px 20px; border-radius: 25px; border: 2px solid #e0e0e0; background: white; cursor: pointer; white-space: nowrap; font-weight: 600; }
+        .treatment-tab.active { background: #2ecc71; color: white; border-color: #2ecc71; }
+        .step { display: flex; align-items: start; margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 12px; }
+        .step-number { width: 30px; height: 30px; background: #2ecc71; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 15px; flex-shrink: 0; }
+        .step-title { font-weight: 600; margin-bottom: 5px; color: #2c3e50; }
+        .step-description { font-size: 14px; color: #6c757d; }
+        .price-tag { display: inline-block; background: #2ecc71; color: white; padding: 5px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-top: 10px; }
+        .alert { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .btn-primary { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; border: none; padding: 18px 30px; border-radius: 15px; font-size: 18px; font-weight: 600; cursor: pointer; width: 100%; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3); margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="header">
+            <button class="back-btn">←</button>
+            <h1>Diagnosis Result</h1>
+            <button class="lang-toggle">🌐 EN</button>
+        </div>
+        <div class="content">
+            
+            <div class="disease-result">
+                <div style="font-size: 60px; margin-bottom: 15px;">🍌</div>
+                <div class="disease-name">Fusarium Wilt</div>
+                <div class="confidence-badge">92% Confidence</div>
+                <p style="margin-top: 15px; font-size: 14px; opacity: 0.9;">
+                    Commonly affects banana plants in humid conditions
+                </p>
+            </div>
+
+            <div class="section-header">Treatment Options</div>
+            <div class="treatment-tabs">
+                <div class="treatment-tab active">Organic</div>
+                <div class="treatment-tab">Biological</div>
+                <div class="treatment-tab">Traditional</div>
+                <div class="treatment-tab">Synthetic</div>
+            </div>
+
+            <h3 style="color: #2c3e50; margin-bottom: 15px;">Organic Treatment</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <div class="step-title">Remove Infected Plants</div>
+                    <div class="step-description">
+                        Cut and burn severely affected plants to prevent spread
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <div class="step-title">Apply Neem Oil Solution</div>
+                    <div class="step-description">
+                        Mix 2 tablespoons neem oil per liter of water. Spray on remaining plants every 7 days
+                    </div>
+                    <div class="price-tag">₱150-250 / bottle</div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <div class="step-title">Improve Soil Drainage</div>
+                    <div class="step-description">
+                        Add organic matter and ensure proper water flow
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert">
+                ✓ Expected Results: Improvement in 2-3 weeks with consistent application
+            </div>
+
+            <div style="margin-top: 20px;">
+                <strong style="color: #2c3e50;">Where to Buy:</strong>
+                <p style="color: #7f8c8d; font-size: 14px; margin-top: 5px;">
+                    • Camiguin Agri Supply Store, Mambajao<br>
+                    • Green Farms Depot, Catarman
+                </p>
+            </div>
+
+            <button class="btn-primary">Record Treatment Applied</button>
+        </div>
+    </div>
+</body>
+</html>
