@@ -59,7 +59,9 @@ This document tracks the development phases of the UMA.AI mobile application.
     - [ ] Offline Mode Verification
     - [ ] Navigation Edge Cases
     - [ ] UI Consistency Check against `reference/`
-- [ ] **Assets**
+- [x] **Assets**
+    - [x] **Design**: Generate and Integrate Custom Icons (Gemini). <!-- id: 25 -->
+    - [x] **Refinement**: Replace all frontend emojis with professional icons. <!-- id: 26 -->
     - [ ] App Icon & Splash Screen
     - [ ] Final Content/Copy Review
 
