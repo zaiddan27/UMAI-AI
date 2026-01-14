@@ -4,12 +4,13 @@ import { RootStackParamList } from '../types/navigation';
 import { MainTabNavigator } from './MainTabNavigator';
 
 // Screens
-import { WelcomeScreen, ProfileSetupScreen, CropSelectionScreen, CameraScreen } from '../screens/Placeholders';
+import { WelcomeScreen } from '../screens/WelcomeScreen';
+import { ProfileSetupScreen } from '../screens/ProfileSetupScreen'; // Real Screen
+import { CropSelectionScreen, CameraScreen } from '../screens/Placeholders';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const RootNavigator = () => {
-  // TODO: Check if user is onboarding to initiate initial route
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       {/* Onboarding Flow */}
